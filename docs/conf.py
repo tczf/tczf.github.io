@@ -17,6 +17,15 @@ release = '0.1'
 #extensions = ['myst_parser']
 source_suffix=['.rst','.md']
 
+
+html_context = {
+"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
+"last_updated": True,
+"commit": False,
+}
+
+html_show_sourcelink = False
+
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
@@ -27,8 +36,3 @@ language = 'zh_CN'
 
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-html_context = {
-"display_github": False, # Add 'Edit on Github' link instead of 'View page source'
-"last_updated": True,
-"commit": False,
-}
