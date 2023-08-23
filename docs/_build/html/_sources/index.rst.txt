@@ -13,7 +13,7 @@ Welcome to tczf's documentation!
    introduction
    definition/index
    classify
-   oringin/index
+   oringin_/index
    style/index
    seekingalpha/index
    optimization/index

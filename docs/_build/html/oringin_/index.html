@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="zh-CN" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>基础指标说明 &mdash; 投资分析量化指标 0.1 文档</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="索引" href="../genindex.html" />
+    <link rel="search" title="搜索" href="../search.html" />
+    <link rel="next" title="资产定价" href="valuation/index.html" />
+    <link rel="prev" title="资产分类" href="../classify.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            投资分析量化指标
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="搜索文档" aria-label="搜索文档" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
+              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../introduction.html">概览</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../definition/index.html">基础定义说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../classify.html">资产分类</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">基础指标说明</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="valuation/index.html">资产定价</a></li>
+<li class="toctree-l2"><a class="reference internal" href="trading/index.html">资产交易</a></li>
+<li class="toctree-l2"><a class="reference internal" href="holding/index.html">资产持仓</a></li>
+<li class="toctree-l2"><a class="reference internal" href="return/index.html">收益率及贡献</a></li>
+<li class="toctree-l2"><a class="reference internal" href="risk/index.html">风险</a></li>
+<li class="toctree-l2"><a class="reference internal" href="characteristic/index.html">资产特性</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../style/index.html">资产风格</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../seekingalpha/index.html">资产价值发现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../optimization/index.html">优化配置</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../construction/index.html">投资组合构造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../performance/index.html">绩效评估</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="移动版导航菜单" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">投资分析量化指标</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="页面导航">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">基础指标说明</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/oringin_/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="id1">
+<h1>基础指标说明<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="valuation/index.html">资产定价</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="valuation/asset/index.html">基础资产定价</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="valuation/asset/stock.html">股票估值</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/stock.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/stock.html#id3">估值方法</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/asset/bond.html">债券定价</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/bond.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/bond.html#id3">现金流</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/bond.html#id4">期现</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/bond.html#id5">贴现率</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/bond.html#id6">一般定价公式</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/bond.html#id7">其他</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/asset/fund.html">基金定价</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/fund.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/fund.html#id3">总资产</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/fund.html#id4">总净值</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/fund.html#id5">总份额</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/fund.html#id6">一般定价计算</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/asset/other.html">其他基础资产定价</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/other.html#cdr">CDR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/asset/other.html#id2">票据</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="valuation/derivative/index.html">衍生品定价</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="valuation/derivative/forward.html">远期估值</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/forward.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/forward.html#id3">估值方法</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/derivative/swap.html">互换估值</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/swap.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/swap.html#id3">估值方法</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/derivative/future.html">期货估值</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/future.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/future.html#id3">估值方法</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/derivative/option.html">期权估值</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/option.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/option.html#id3">估值方法</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="valuation/derivative/other.html">其他衍生品估值</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/other.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="valuation/derivative/other.html#id3">估值方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="trading/index.html">资产交易</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="trading/markettrading.html">市场交易</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="trading/markettrading.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trading/markettrading.html#id3">市场换收率</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="trading/activetrading.html">持仓交易</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="trading/activetrading.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="trading/activetrading.html#id3">计算方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="holding/index.html">资产持仓</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="holding/proportion.html">持仓占比</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="holding/proportion.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="holding/proportion.html#id3">占市值比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="holding/proportion.html#id4">占净值比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="holding/proportion.html#id5">占资产比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="holding/proportion.html#id6">集中度</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="holding/cluster.html">持仓集中度</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="holding/cluster.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="holding/cluster.html#id3">估值方法</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="return/index.html">收益率及贡献</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="return/decompose.html">收益形态及分解</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="return/decompose.html#id2">收益形态</a></li>
+<li class="toctree-l3"><a class="reference internal" href="return/decompose.html#id3">常用分解</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="return/investment/index.html">投资收益率</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="return/investment/assetreturn.html">资产收益率</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/assetreturn.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/assetreturn.html#id3">单期</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/assetreturn.html#id4">多期</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="return/investment/nodereturn.html">分类收益率</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/nodereturn.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/nodereturn.html#id3">计算</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="return/investment/portfolioreturn.html">投资组合收益率</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/portfolioreturn.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/portfolioreturn.html#id3">收益计量</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/portfolioreturn.html#id4">成本计量</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/portfolioreturn.html#id5">组合收益率计算</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="return/investment/portfolioreturn.html#id6">单期</a></li>
+<li class="toctree-l5"><a class="reference internal" href="return/investment/portfolioreturn.html#id7">多期</a></li>
+<li class="toctree-l5"><a class="reference internal" href="return/investment/portfolioreturn.html#id8">单期</a></li>
+<li class="toctree-l5"><a class="reference internal" href="return/investment/portfolioreturn.html#id9">多期</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="return/investment/portfolioreturn.html#id10">其他类型</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="return/market/index.html">市场收益率</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="return/market/assetreturn.html">资产市场收益率</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/market/assetreturn.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/assetreturn.html#id3">股票</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/assetreturn.html#id4">债券</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/assetreturn.html#id5">基金</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/assetreturn.html#id6">期货</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/assetreturn.html#id7">期权</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="return/market/indexreturn.html">指数收益率</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/market/indexreturn.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/indexreturn.html#id3">计算</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="return/market/interestrate.html">利率</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/market/interestrate.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/interestrate.html#id3">利率基准计算</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="return/market/compose.html">复合基准</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/market/compose.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/compose.html#id3">构造</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/compose.html#id4">收益率计算</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="return/market/benchmark.html">比较基准</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="return/market/benchmark.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/benchmark.html#id3">基准选择</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/benchmark.html#id4">基准构造</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/benchmark.html#id5">基准指数化</a></li>
+<li class="toctree-l4"><a class="reference internal" href="return/market/benchmark.html#id6">其他</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="return/contribution.html">收益率贡献</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="return/contribution.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="return/contribution.html#id3">计算</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="return/excess.html">超额收益率及贡献</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="return/excess.html#id2">超额收益率</a></li>
+<li class="toctree-l3"><a class="reference internal" href="return/excess.html#id3">超额贡献</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="risk/index.html">风险</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="risk/distribution.html">收益率分布</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="risk/distribution.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risk/distribution.html#id3">正态假设</a></li>
+<li class="toctree-l3"><a class="reference internal" href="risk/distribution.html#id4">其他假设</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="risk/assetrisk/index.html">市场风险</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="risk/assetrisk/market.html">市场风险</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/market.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/market.html#id3">价格风险</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/market.html#id4">利率风险</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/market.html#id5">汇率风险</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="risk/assetrisk/liquidity.html">流动性风险</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/liquidity.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/liquidity.html#id3">变现天数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/liquidity.html#id4">变现比例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/liquidity.html#id5">变现金额</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="risk/assetrisk/credit.html">信用风险</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="risk/assetrisk/credit.html#id2">含义</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="risk/portfoliorisk/index.html">组合风险</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="risk/portfoliorisk/market.html">市场风险</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/market.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/market.html#id3">价格风险</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/market.html#id4">利率风险</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/market.html#id5">汇率风险</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="risk/portfoliorisk/liquidity.html">流动性风险</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/liquidity.html#id2">含义</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/liquidity.html#id3">变现天数</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/liquidity.html#id4">变现比例</a></li>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/liquidity.html#id5">变现金额</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="risk/portfoliorisk/credit.html">信用风险</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="risk/portfoliorisk/credit.html#id2">含义</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="characteristic/index.html">资产特性</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="characteristic/stock.html">持股票特征</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/stock.html#pe">PE</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/stock.html#pb">PB</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/stock.html#roc">ROC</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="characteristic/bond.html">债券特征</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/bond.html#ytm">YTM</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/bond.html#id2">久期</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/bond.html#id3">凸性</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/bond.html#dv01-dvbp">DV01/DVBP</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="characteristic/fund.html">基金特征</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/fund.html#m2">M2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/fund.html#sharpe">sharpe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/fund.html#id2">信息比例</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/fund.html#id3">跟踪误差</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="characteristic/other.html">持仓占比</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/other.html#id2">含义</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/other.html#id3">占市值比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/other.html#id4">占净值比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/other.html#id5">占资产比</a></li>
+<li class="toctree-l3"><a class="reference internal" href="characteristic/other.html#id6">集中度</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
+        <a href="../classify.html" class="btn btn-neutral float-left" title="资产分类" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="valuation/index.html" class="btn btn-neutral float-right" title="资产定价" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; 版权所有 2023, tczf.</p>
+  </div>
+
+  利用 <a href="https://www.sphinx-doc.org/">Sphinx</a> 构建，使用的 
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">主题</a>
+    由 <a href="https://readthedocs.org">Read the Docs</a> 开发.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
