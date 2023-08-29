@@ -125,16 +125,20 @@
 <p>对于成本来说，计算方式较多，不同成本的计算直接影响收益率的计算，根据现金流权重影响分为如下：</p>
 <section id="id5">
 <h4>时间加权成本（多头）<a class="headerlink" href="#id5" title="此标题的永久链接"></a></h4>
-<dl>
-<dt>单期：</dt><dd><div class="line-block">
+<p>单期：</p>
+<blockquote>
+<div><div class="line-block">
 <div class="line"><strong>开市成本</strong>：<span class="math notranslate nohighlight">\(C_{t}(1,1)=NV_{t-1}+CFI_{t}-CFO_{t}\)</span></div>
 <div class="line"><strong>闭市成本</strong>：<span class="math notranslate nohighlight">\(C_{t}(0,0)=NV_{t-1}\)</span></div>
 <div class="line"><strong>半开半闭</strong>：<span class="math notranslate nohighlight">\(C_{t}(1,0)=NV_{t-1}+CFI_{t}\)</span></div>
 </div>
-</dd>
-</dl>
-<p>多期：
-| 由于多期成本因为资金流入流出的变化，导致可能每一期的成本处于变化，因此一般多期采用先计算每一期收益率，然后将每一期收益率通过几何连乘的方式进行计算。</p>
+</div></blockquote>
+<p>多期：</p>
+<blockquote>
+<div><div class="line-block">
+<div class="line">由于多期成本因为资金流入流出的变化，导致可能每一期的成本处于变化，因此一般多期采用先计算每一期收益率，然后将每一期收益率通过几何连乘的方式进行计算。</div>
+</div>
+</div></blockquote>
 <p><em>注：空头计算成本可能需要根据实际持仓情况调换计量方向。</em></p>
 </section>
 <section id="id6">
@@ -149,19 +153,23 @@
 </div>
 <p>多期：<span class="math notranslate nohighlight">\(C_{0:t}=NV_{0}+\sum_{t=0}^{T}[w_{t} \cdot (CFI_{t}-CFO_{t})]\)</span></p>
 <div class="line-block">
-<div class="line">其中，<span class="math notranslate nohighlight">\(w_{t}=\frac {D_{t}-D_{0}}{D_{T}-D_{0}}\)</span>，<span class="math notranslate nohighlight">\(D_{0}\)</span>：表示期初日期， <span class="math notranslate nohighlight">\(D_{T}\)</span>：表示期末日期，<span class="math notranslate nohighlight">\(D_{t}\)</span>：表示现金流发生日期</div>
+<div class="line">其中，<span class="math notranslate nohighlight">\(w_{t}=\frac {D_{T}-D_{t}}{D_{T}-D_{0}}\)</span>，<span class="math notranslate nohighlight">\(D_{0}\)</span>：表示期初日期， <span class="math notranslate nohighlight">\(D_{T}\)</span>：表示期末日期，<span class="math notranslate nohighlight">\(D_{t}\)</span>：表示现金流发生日期</div>
 </div>
 </section>
-</section>
-</section>
 <section id="id7">
-<h2>常见组合收益率计量<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h2>
-<p>对于类似公募基金、浮动型理财产品、浮动型非标资产等有单位净值披露或者估值的投资组合来说通常会采用份额法计算组合收益率，还有一部分没有单位净值公布的投资组合则更多采用金额法或者金额加权收益率的方式。</p>
+<h4>平均资金占用（多头）<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h4>
+<p>平均资金占用与修正dietz的算法类似，只是在计算上会根据会计投资类型为是否持有至到期、分红付息等因素计量期初成本和流入流出。（保险常用）</p>
+</section>
+</section>
+</section>
 <section id="id8">
-<h3>份额法（非货币类组合）<a class="headerlink" href="#id8" title="此标题的永久链接"></a></h3>
-<p>这种方法适用于组合本身有单位净值估值的场景，例如公募基金、私募基金、理财产品等。</p>
+<h2>常见组合收益率计量<a class="headerlink" href="#id8" title="此标题的永久链接"></a></h2>
+<p>对于类似公募基金、浮动型理财产品、浮动型非标资产等有单位净值披露或者估值的投资组合来说通常会采用份额法计算组合收益率，还有一部分没有单位净值公布的投资组合则更多采用金额法或者金额加权收益率的方式。</p>
 <section id="id9">
-<h4>单期:<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h4>
+<h3>份额法（非货币类组合）<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h3>
+<p>这种方法适用于组合本身有单位净值估值的场景，例如公募基金、私募基金、理财产品等。</p>
+<section id="id10">
+<h4>单期:<a class="headerlink" href="#id10" title="此标题的永久链接"></a></h4>
 <ol class="lowerroman simple">
 <li><p>前复权：</p></li>
 </ol>
@@ -253,8 +261,8 @@
 </div>
 </div></blockquote>
 </section>
-<section id="id10">
-<h4>多期<a class="headerlink" href="#id10" title="此标题的永久链接"></a></h4>
+<section id="id11">
+<h4>多期<a class="headerlink" href="#id11" title="此标题的永久链接"></a></h4>
 <ol class="arabic simple">
 <li><p>组合正常运行，没有任何情况，或者计算区间没有任何情况：</p></li>
 </ol>
@@ -268,21 +276,21 @@
 <p>根据处理好的单期收益率，采用几何连乘方式进行计算。</p>
 </section>
 </section>
-<section id="id11">
-<h3>金额法<a class="headerlink" href="#id11" title="此标题的永久链接"></a></h3>
 <section id="id12">
-<h4>单期<a class="headerlink" href="#id12" title="此标题的永久链接"></a></h4>
-</section>
+<h3>金额法<a class="headerlink" href="#id12" title="此标题的永久链接"></a></h3>
 <section id="id13">
-<h4>多期<a class="headerlink" href="#id13" title="此标题的永久链接"></a></h4>
-</section>
-</section>
+<h4>单期<a class="headerlink" href="#id13" title="此标题的永久链接"></a></h4>
 </section>
 <section id="id14">
-<h2>货币类、现金类组合<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h2>
+<h4>多期<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h4>
+</section>
+</section>
 </section>
 <section id="id15">
-<h2>金额法与份额法等价推导及误差来源分析<a class="headerlink" href="#id15" title="此标题的永久链接"></a></h2>
+<h2>货币类、现金类组合<a class="headerlink" href="#id15" title="此标题的永久链接"></a></h2>
+</section>
+<section id="id16">
+<h2>金额法与份额法等价推导及误差来源分析<a class="headerlink" href="#id16" title="此标题的永久链接"></a></h2>
 <p>实际上，金额法与份额法是同源的</p>
 </section>
 </section>
