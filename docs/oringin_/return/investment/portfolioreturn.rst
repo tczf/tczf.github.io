@@ -99,7 +99,15 @@ i. 前复权：
 
  | 需要根据组合总份额推算拆分比例，用新的拆分比例计算当日收益率
 
-.. math:: s_{t} = \frac{share_{t}}{share_{t-1}+BS_{t}-SS_{t}}
+.. math:: s_{t} = \frac{share_{t}}{share_{t-1}+share_{t}^{b}-share_{t}^{s}}
+
+其中，
+
+:math:`share_{t}`：表示t日总份额；
+:math:`share_{t}^{b}`：表示t日申购份额；
+:math:`share_{t}^{s}`：表示t日赎回份额；
+
+若  :math:`s_{t} \neq 1`  表示单位净值发生实际拆分或合并。
 
 1.4. 产品拆分（拆分A、C份额）
 
