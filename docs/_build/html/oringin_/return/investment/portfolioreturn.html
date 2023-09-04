@@ -105,44 +105,80 @@
              
   <section id="id1">
 <h1>组合投资收益率<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
-<p>组合投资收益率是组成绩效评估中最重要的环节，可以说不论是考核投资组合还是投资经理都绕不开投资收益率，但是相对持仓明细券来说，组合投资收益率既有相似的计算也有相对独立的参数。</p>
+<p><strong>含义</strong>：组合投资收益率是组成绩效评估中最重要的环节，可以说不论是考核投资组合还是投资经理都离不开投资收益率。对于投资组合而言，组合投资收益率是指组合投资收益（税后）占组合投资成本的比例。</p>
 <section id="id2">
-<h2>说明<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
-<p>对于投资组合而言，组合投资收益率是指组合投资收益（税后）占组合投资成本的比例。</p>
-<section id="id3">
-<h3>组合收益计量<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h3>
+<h2>组合收益公式：<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
 <div class="math notranslate nohighlight">
 \[PL_{t}= NV_{t}-NV_{t-1}-CFI_{t}+CFO_{t}\]</div>
-<div class="line-block">
-<div class="line"><span class="math notranslate nohighlight">\(PL_{t}\)</span>：表示总收益；</div>
-<div class="line"><span class="math notranslate nohighlight">\(MV_{t}\)</span> ：表示t日组合的总估值或者总净值（一般是各资产净价估值与应计利息汇总今日收盘估值（今收盘价）*今日数量）；</div>
-<div class="line"><span class="math notranslate nohighlight">\(CFI_{t}\)</span> ：表示t日组合资金或者资产流入，比如申购、资产或者资金划入等，一般多头为正数，空头为负数；</div>
-<div class="line"><span class="math notranslate nohighlight">\(CFO_{t}\)</span> ：表示t日组合资金或者资产流出，比如赎回、资产或者资金划出、组合分红、付息、管理费、业绩报酬等，一般多头为正数，空头为负数；</div>
+<div class="admonition note">
+<p class="admonition-title">备注</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><span class="math notranslate nohighlight">\(PL_{t}\)</span>:总收益；</dt><dd><p>包括：浮动盈亏、价差收益、利息红利等。</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><span class="math notranslate nohighlight">\(MV_{t}\)</span>:t日组合的总估值或者总净值；</dt><dd><p>例如：各资产净价估值与应计利息汇总今日收盘估值（今收盘价）*今日数量)。</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><span class="math notranslate nohighlight">\(CFI_{t}\)</span>:t日组合资金或者资产流入;</dt><dd><p>例如：申购、资产或者资金划入等。</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><span class="math notranslate nohighlight">\(CFO_{t}\)</span>:t日组合资金或者资产流出;</dt><dd><p>例如：赎回、资产或者资金划出、组合分红、付息、管理费、业绩报酬等。</p>
+</dd>
+</dl>
+</li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>对于流入和流出来说，一般多头数值均为正数，空头数值均为负数；</p>
 </div>
 </section>
+<section id="id3">
+<h2>组合成本公式<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h2>
+<p>对于成本来说，计算方式较多，不同成本的计算直接影响收益率的计算，根据现金流是否影响组合成本可分为：时间加权与金额加权，金额加权可以划分为简单金额加权和修正金额加权。</p>
 <section id="id4">
-<h3>成本计量<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h3>
-<p>对于成本来说，计算方式较多，不同成本的计算直接影响收益率的计算，根据现金流权重影响分为如下：</p>
+<h3>时间加权成本（多头）<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h3>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>根据流入流出的清算速度可以划分为开市、闭市及半开半闭。</p>
+<ul class="simple">
+<li><p>开市：今日流入流出均计入成本，例如，T+0 基金</p></li>
+<li><p>闭市：今日流入流出不计入成本，例如，T+1 基金</p></li>
+<li><p>半开半闭：仅今日流入计入成本，例如，A股交易</p></li>
+</ul>
+</div>
 <section id="id5">
-<h4>时间加权成本（多头）<a class="headerlink" href="#id5" title="此标题的永久链接"></a></h4>
-<p>单期：</p>
+<h4>单期公式：<a class="headerlink" href="#id5" title="此标题的永久链接"></a></h4>
 <blockquote>
 <div><div class="line-block">
-<div class="line"><strong>开市成本</strong>：<span class="math notranslate nohighlight">\(C_{t}(1,1)=NV_{t-1}+CFI_{t}-CFO_{t}\)</span></div>
+<div class="line"><strong>开市成本</strong>:：<span class="math notranslate nohighlight">\(C_{t}(1,1)=NV_{t-1}+CFI_{t}-CFO_{t}\)</span></div>
 <div class="line"><strong>闭市成本</strong>：<span class="math notranslate nohighlight">\(C_{t}(0,0)=NV_{t-1}\)</span></div>
 <div class="line"><strong>半开半闭</strong>：<span class="math notranslate nohighlight">\(C_{t}(1,0)=NV_{t-1}+CFI_{t}\)</span></div>
 </div>
 </div></blockquote>
-<p>多期：</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">由于多期成本因为资金流入流出的变化，导致可能每一期的成本处于变化，因此一般多期采用先计算每一期收益率，然后将每一期收益率通过几何连乘的方式进行计算。</div>
-</div>
-</div></blockquote>
-<p><em>注：空头计算成本可能需要根据实际持仓情况调换计量方向。</em></p>
 </section>
 <section id="id6">
-<h4>资金加权成本（多头）<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h4>
+<h4>多期公式：<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h4>
+<blockquote>
+<div><div class="line-block">
+<div class="line">由于多期成本因为每期资金流入流出的可能变化，导致可能每一期的成本处于变化，因此一般多期采用先计算每一期收益率，然后将每一期收益率通过几何连乘的方式进行计算。</div>
+</div>
+</div></blockquote>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p><em>空头计算成本可能需要根据实际持仓情况调换计量方向。</em></p>
+</div>
+</section>
+</section>
+<section id="id7">
+<h3>资金加权成本（多头）<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h3>
 <div class="line-block">
 <div class="line"><strong>简单资金加权</strong>：</div>
 </div>
@@ -156,24 +192,23 @@
 <div class="line">其中，<span class="math notranslate nohighlight">\(w_{t}=\frac {D_{T}-D_{t}}{D_{T}-D_{0}}\)</span>，<span class="math notranslate nohighlight">\(D_{0}\)</span>：表示期初日期， <span class="math notranslate nohighlight">\(D_{T}\)</span>：表示期末日期，<span class="math notranslate nohighlight">\(D_{t}\)</span>：表示现金流发生日期</div>
 </div>
 </section>
-<section id="id7">
-<h4>平均资金占用（多头）<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h4>
+<section id="id8">
+<h3>平均资金占用（多头）<a class="headerlink" href="#id8" title="此标题的永久链接"></a></h3>
 <p>平均资金占用与修正dietz的算法类似，只是在计算上会根据会计投资类型为是否持有至到期、分红付息等因素计量期初成本和流入流出。（保险常用）</p>
 </section>
 </section>
-</section>
-<section id="id8">
-<h2>常见组合收益率计量<a class="headerlink" href="#id8" title="此标题的永久链接"></a></h2>
-<p>对于类似公募基金、浮动型理财产品、浮动型非标资产等有单位净值披露或者估值的投资组合来说通常会采用份额法计算组合收益率，还有一部分没有单位净值公布的投资组合则更多采用金额法或者金额加权收益率的方式。</p>
 <section id="id9">
-<h3>份额法（非货币类组合）<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h3>
-<p>这种方法适用于组合本身有单位净值估值的场景，例如公募基金、私募基金、理财产品等。</p>
+<h2>常见组合收益率计量<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h2>
+<p>对于类似公募基金、浮动型理财产品、浮动型非标资产等有单位净值披露或者估值的投资组合来说通常会采用份额法计算组合收益率，还有一部分没有单位净值公布的投资组合则更多采用金额法或者金额加权收益率的方式。</p>
 <section id="id10">
-<h4>单期:<a class="headerlink" href="#id10" title="此标题的永久链接"></a></h4>
-<ol class="lowerroman simple">
-<li><p>前复权：</p></li>
-</ol>
-<p>1.1. 非成立日</p>
+<h3>份额法（非货币类组合）<a class="headerlink" href="#id10" title="此标题的永久链接"></a></h3>
+<p>这种方法适用于组合本身有单位净值估值的场景，例如公募基金、私募基金、理财产品等。</p>
+<section id="id11">
+<h4>单期:<a class="headerlink" href="#id11" title="此标题的永久链接"></a></h4>
+<section id="id12">
+<h5>1. 前复权收益率：<a class="headerlink" href="#id12" title="此标题的永久链接"></a></h5>
+<section id="id13">
+<h6>1.1. 非成立日<a class="headerlink" href="#id13" title="此标题的永久链接"></a></h6>
 <div class="math notranslate nohighlight">
 \[r_{t} = \frac{nav_{t} \cdot\ s_{t} - nav_{t-1} + div_{t}}{nav_{t-1} - div_{t}}\]</div>
 <dl>
@@ -185,7 +220,9 @@
 </div>
 </dd>
 </dl>
-<p>1.2. 成立日（成立日因为首日单位净值无历史数据需要取发行价格）</p>
+</section>
+<section id="id14">
+<h6>1.2. 成立日（成立日因为首日单位净值无历史数据需要取发行价格）<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h6>
 <div class="math notranslate nohighlight">
 \[r_{0} = \frac{nav_{0} \cdot\ s_{0} - nav_{issue} + div_{0}}{nav_{issue} - div_{0}}\]</div>
 <dl>
@@ -196,7 +233,9 @@
 </div>
 </dd>
 </dl>
-<p>1.3. 净值归一（组合转型、其他特殊事件需要重新计算单位净值以满足监管或者吸引投资人）</p>
+</section>
+<section id="id15">
+<h6>1.3. 净值归一（组合转型、其他特殊事件需要重新计算单位净值以满足监管或者吸引投资人）<a class="headerlink" href="#id15" title="此标题的永久链接"></a></h6>
 <blockquote>
 <div><div class="line-block">
 <div class="line">需要根据组合总份额推算拆分比例，用新的拆分比例计算当日收益率</div>
@@ -209,22 +248,28 @@
 <span class="math notranslate nohighlight">\(share_{t}^{b}\)</span>：表示t日申购份额；
 <span class="math notranslate nohighlight">\(share_{t}^{s}\)</span>：表示t日赎回份额；</p>
 <p>若  <span class="math notranslate nohighlight">\(s_{t} \neq 1\)</span>  表示单位净值发生实际拆分或合并。</p>
-<p>1.4. 产品拆分（拆分A、C份额）</p>
+</section>
+<section id="ac">
+<h6>1.4. 产品拆分（拆分A、C份额）<a class="headerlink" href="#ac" title="此标题的永久链接"></a></h6>
 <blockquote>
 <div><div class="line-block">
 <div class="line">新拆分的收益率需要继承原来母基金收益率。</div>
 </div>
 </div></blockquote>
-<p>1.5.首个交易日（交易频率披露净值情况）</p>
+</section>
+<section id="id16">
+<h6>1.5.首个交易日（交易频率披露净值情况）<a class="headerlink" href="#id16" title="此标题的永久链接"></a></h6>
 <blockquote>
 <div><div class="line-block">
 <div class="line">需要根据区间收益率规则计算最近交易日至第一个累积收益率的累计收益率。</div>
 </div>
 </div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p>后复权：</p></li>
-</ol>
-<p>2.1. 非成立日：</p>
+</section>
+</section>
+<section id="id17">
+<h5>2. 后复权收益率：<a class="headerlink" href="#id17" title="此标题的永久链接"></a></h5>
+<section id="id18">
+<h6>2.1. 非成立日：<a class="headerlink" href="#id18" title="此标题的永久链接"></a></h6>
 <div class="math notranslate nohighlight">
 \[r_{t} = \frac{nav_{t} \cdot\ s_{t} - nav_{t-1} + div_{t}}{nav_{t-1} }\]</div>
 <dl>
@@ -236,7 +281,9 @@
 </div>
 </dd>
 </dl>
-<p>2.2. 成立日：</p>
+</section>
+<section id="id19">
+<h6>2.2. 成立日：<a class="headerlink" href="#id19" title="此标题的永久链接"></a></h6>
 <div class="math notranslate nohighlight">
 \[r_0=\frac{nav_{0} \cdot\ s_{0} - nav_{issue} + div_{0}}{nav_{issue}}\]</div>
 <dl>
@@ -247,56 +294,58 @@
 </div>
 </dd>
 </dl>
-<p>2.3. 净值归一</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">同“前复权处理”</div>
-</div>
-</div></blockquote>
-<p>2.4. 产品转型</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line">同“前复权处理”</div>
-</div>
-</div></blockquote>
-<p>2.5. 首个交易日</p>
+</section>
+<section id="id20">
+<h6>2.3. 净值归一<a class="headerlink" href="#id20" title="此标题的永久链接"></a></h6>
 <blockquote>
 <div><div class="line-block">
 <div class="line">同“前复权处理”</div>
 </div>
 </div></blockquote>
 </section>
-<section id="id11">
-<h4>多期<a class="headerlink" href="#id11" title="此标题的永久链接"></a></h4>
-<ol class="arabic simple">
-<li><p>组合正常运行，没有任何情况，或者计算区间没有任何情况：</p></li>
-</ol>
+<section id="id21">
+<h6>2.4. 产品转型<a class="headerlink" href="#id21" title="此标题的永久链接"></a></h6>
+<blockquote>
+<div><div class="line-block">
+<div class="line">同“前复权处理”</div>
+</div>
+</div></blockquote>
+</section>
+<section id="id22">
+<h6>2.5. 首个交易日<a class="headerlink" href="#id22" title="此标题的永久链接"></a></h6>
+<blockquote>
+<div><div class="line-block">
+<div class="line">同“前复权处理”</div>
+</div>
+</div></blockquote>
+</section>
+</section>
+</section>
+<section id="id23">
+<h4>多期<a class="headerlink" href="#id23" title="此标题的永久链接"></a></h4>
+<section id="id24">
+<h5>1. 组合正常运行，没有任何情况，或者计算区间没有任何情况：<a class="headerlink" href="#id24" title="此标题的永久链接"></a></h5>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[r_{1:T}=(1+r_{1}) \cdot\ (1+r_{2}) ... (1+r_{T})-1 = \prod_{t=1}^{t=T}(1+r_{t})-1\]</div>
 </div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p>归一、转型等</p></li>
-</ol>
+</section>
+<section id="id25">
+<h5>2. 归一、转型等<a class="headerlink" href="#id25" title="此标题的永久链接"></a></h5>
 <p>根据处理好的单期收益率，采用几何连乘方式进行计算。</p>
 </section>
 </section>
-<section id="id12">
-<h3>金额法<a class="headerlink" href="#id12" title="此标题的永久链接"></a></h3>
-<section id="id13">
-<h4>单期<a class="headerlink" href="#id13" title="此标题的永久链接"></a></h4>
 </section>
-<section id="id14">
-<h4>多期<a class="headerlink" href="#id14" title="此标题的永久链接"></a></h4>
+<section id="id26">
+<h3>金额法<a class="headerlink" href="#id26" title="此标题的永久链接"></a></h3>
 </section>
+<section id="id27">
+<h3>货币类、现金类组合<a class="headerlink" href="#id27" title="此标题的永久链接"></a></h3>
 </section>
-</section>
-<section id="id15">
-<h2>货币类、现金类组合<a class="headerlink" href="#id15" title="此标题的永久链接"></a></h2>
-</section>
-<section id="id16">
-<h2>金额法与份额法等价推导及误差来源分析<a class="headerlink" href="#id16" title="此标题的永久链接"></a></h2>
+<section id="id28">
+<h3>金额法与份额法等价推导及误差来源分析<a class="headerlink" href="#id28" title="此标题的永久链接"></a></h3>
 <p>实际上，金额法与份额法是同源的</p>
+</section>
 </section>
 </section>
 
