@@ -195,14 +195,14 @@
 <section id="id9">
 <h5>单期成本：<a class="headerlink" href="#id9" title="此标题的永久链接"></a></h5>
 <blockquote>
-<div><p><span class="math notranslate nohighlight">\(C_{t}=NV_{t-1}+\frac{\sum (CFI_{t}-CFO_{t})}{2}\)</span></p>
+<div><div class="math notranslate nohighlight">
+\[C_{t}=NV_{t-1}+\frac{\sum (CFI_{t}-CFO_{t})}{2}\]</div>
 </div></blockquote>
 </section>
 <section id="id10">
 <h5>多期成本：<a class="headerlink" href="#id10" title="此标题的永久链接"></a></h5>
 <blockquote>
-<div><p><span class="math notranslate nohighlight">\(C_{0:t}=NV_{0}+\frac{\sum_{t=0}^{T}(CFI_{t}-CFO_{t})}{2}\)</span></p>
-</div></blockquote>
+<div></div></blockquote>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <ul class="simple">
@@ -228,7 +228,8 @@
 </section>
 <section id="id12">
 <h5>多期成本：<a class="headerlink" href="#id12" title="此标题的永久链接"></a></h5>
-<p><span class="math notranslate nohighlight">\(C_{0:t}=NV_{0}+\sum_{t=0}^{T}[w_{t} \cdot (CFI_{t}-CFO_{t})]\)</span></p>
+<div class="math notranslate nohighlight">
+\[C_{0:t}=NV_{0}+\sum_{t=0}^{T}[w_{t} \cdot (CFI_{t}-CFO_{t})]\]</div>
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <ul class="simple">
@@ -289,8 +290,8 @@
 </li>
 </ul>
 </div>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
 <p><strong>此计算方式从投资人角度来看，投资处于确认分红之后，因此需要剔除分红和拆分带来的投资影响。</strong></p>
 </div>
 </section>
@@ -316,7 +317,7 @@
 <div class="admonition note">
 <p class="admonition-title">备注</p>
 <p>组合转型、其他特殊事件需要重新计算单位净值以满足监管或者吸引投资人，因此需要根据组合总份额推算拆分比例，用该拆分比例计算当日收益率。
--<strong>这类事件通常不会公布拆分比例。</strong></p>
+<code class="docutils literal notranslate"><span class="pre">该类事件通常不会公布拆分比例。</span></code></p>
 </div>
 <p>推算拆分份额公式：</p>
 <div class="math notranslate nohighlight">
@@ -329,8 +330,8 @@
 <li><p><span class="math notranslate nohighlight">\(share_{t}^{s}\)</span>：表示t日赎回份额；</p></li>
 </ul>
 </div>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
 <p><strong>若</strong> <span class="math notranslate nohighlight">\(s_{t} \neq 1\)</span> <strong>表示单位净值发生实际拆分或合并。</strong></p>
 </div>
 </section>
@@ -363,8 +364,8 @@
 <li><p><span class="math notranslate nohighlight">\(div_{t}\)</span>：t日单位分红；</p></li>
 </ul>
 </div>
-<div class="admonition hint">
-<p class="admonition-title">提示</p>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
 <p><strong>此计算方式从投资人角度来看，投资处于确认分红之前，因此，实际发生的分红和拆分都需考虑在投资收益率中。</strong></p>
 </div>
 </section>
@@ -402,28 +403,25 @@
 </section>
 </section>
 <section id="id28">
-<h4>多期收益率<a class="headerlink" href="#id28" title="此标题的永久链接"></a></h4>
-<section id="id29">
-<h5>1. 组合正常运行，没有任何情况，或者计算区间没有任何情况：<a class="headerlink" href="#id29" title="此标题的永久链接"></a></h5>
+<h4>多期份额法收益率<a class="headerlink" href="#id28" title="此标题的永久链接"></a></h4>
 <blockquote>
 <div><div class="math notranslate nohighlight">
 \[r_{1:T}=(1+r_{1}) \cdot\ (1+r_{2}) ... (1+r_{T})-1 = \prod_{t=1}^{t=T}(1+r_{t})-1\]</div>
 </div></blockquote>
+<div class="admonition attention">
+<p class="admonition-title">注意</p>
+<p>其他情况根据处理好的单期收益率，按阶段采用几何连乘方式进行计算。</p>
+</div>
+</section>
+</section>
+<section id="id29">
+<h3>金额法<a class="headerlink" href="#id29" title="此标题的永久链接"></a></h3>
 </section>
 <section id="id30">
-<h5>2. 归一、转型等<a class="headerlink" href="#id30" title="此标题的永久链接"></a></h5>
-<p>需根据处理好的单期收益率，按阶段采用几何连乘方式进行计算。</p>
-</section>
-</section>
+<h3>货币类、现金类组合<a class="headerlink" href="#id30" title="此标题的永久链接"></a></h3>
 </section>
 <section id="id31">
-<h3>金额法<a class="headerlink" href="#id31" title="此标题的永久链接"></a></h3>
-</section>
-<section id="id32">
-<h3>货币类、现金类组合<a class="headerlink" href="#id32" title="此标题的永久链接"></a></h3>
-</section>
-<section id="id33">
-<h3>金额法与份额法等价推导及误差来源分析<a class="headerlink" href="#id33" title="此标题的永久链接"></a></h3>
+<h3>金额法与份额法等价推导及误差来源分析<a class="headerlink" href="#id31" title="此标题的永久链接"></a></h3>
 <p>实际上，金额法与份额法是同源的</p>
 </section>
 </section>
