@@ -71,7 +71,7 @@
 
 多期成本：
 """""""""""""""""
-     .. math::`C_{0:t}=NV_{0}+\frac{\sum_{t=0}^{T}(CFI_{t}-CFO_{t})}{2}
+     .. math:: C_{0:t}=NV_{0}+\frac{\sum_{t=0}^{T}(CFI_{t}-CFO_{t})}{2}
 
 .. note:: 
 
