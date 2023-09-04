@@ -71,7 +71,7 @@
 
 多期成本
 """""""""""""""""
-     .. math:: C_{0:t}=NV_{0}+\frac{\sum_{t=0}^{T}(CFI_{t}-CFO_{t})}{2}
+     .. math:: C_{0:t}=NV_{0}+\frac{\sum_{t=1}^{T}(CFI_{t}-CFO_{t})}{2}
 
 .. note:: 
 
@@ -91,7 +91,7 @@
 
 多期成本
 """""""""""""""""
-.. math:: C_{0:t}=NV_{0}+\sum_{t=0}^{T}[w_{t} \cdot (CFI_{t}-CFO_{t})]
+.. math:: C_{0:t}=NV_{0}+\sum_{t=1}^{T}[w_{t} \cdot (CFI_{t}-CFO_{t})]
 
 
 .. note:: 
@@ -161,6 +161,8 @@
  - :math:`share_{t}`：表示t日总份额；
  - :math:`share_{t}^{b}`：表示t日申购份额；
  - :math:`share_{t}^{s}`：表示t日赎回份额；
+
+根据计算的拆分份额带入交易日收益率计算公式中即可。
 
 .. attention:: **若** :math:`s_{t} \neq 1` **表示单位净值发生实际拆分或合并。**
 
