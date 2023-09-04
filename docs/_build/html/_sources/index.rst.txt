@@ -8,7 +8,7 @@ Welcome to tczf's documentation!
 
 .. toctree::
    :maxdepth: 6
-   :caption: 目录
+   :caption: 目录：
 
    introduction
    definition/index
