@@ -1,6 +1,6 @@
 
 
-基础指标说明
+基础指标
 ================================
 
 .. toctree::
@@ -11,7 +11,6 @@
    trading/index
    holding/index
    return/index
-   risk/index
    characteristic/index
 
 

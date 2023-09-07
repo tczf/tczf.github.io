@@ -18,6 +18,7 @@ Welcome to tczf's documentation!
    seekingalpha/index
    optimization/index
    construction/index
+   risk/index
    performance/index
 
 

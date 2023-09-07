@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>收益率及贡献 &mdash; 投资分析量化指标 0.1 文档</title>
+  <title>收益贡献 &mdash; 投资分析量化指标 0.1 文档</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -43,16 +43,16 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
-              <p class="caption" role="heading"><span class="caption-text">目录</span></p>
+              <p class="caption" role="heading"><span class="caption-text">目录：</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../introduction.html">概览</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../definition/index.html">基础定义说明</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../definition/index.html">基础定义</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../classify.html">资产分类</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="../index.html">基础指标说明</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">基础指标</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="../valuation/index.html">资产定价</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../trading/index.html">资产交易</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../holding/index.html">资产持仓</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">收益率及贡献</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">收益贡献</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="decompose.html">收益形态及分解</a></li>
 <li class="toctree-l3"><a class="reference internal" href="investment/index.html">投资收益率</a></li>
 <li class="toctree-l3"><a class="reference internal" href="market/index.html">市场收益率</a></li>
@@ -60,14 +60,14 @@
 <li class="toctree-l3"><a class="reference internal" href="excess.html">超额收益率及贡献</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../risk/index.html">风险</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../characteristic/index.html">资产特性</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../style/index.html">资产风格</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../seekingalpha/index.html">资产价值发现</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../optimization/index.html">优化配置</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../../construction/index.html">投资组合构造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../seekingalpha/index.html">价值发现</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../optimization/index.html">配置优化</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../construction/index.html">组合构造</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../risk/index.html">风险评估</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../performance/index.html">绩效评估</a></li>
 </ul>
 
@@ -85,8 +85,8 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="../index.html">基础指标说明</a></li>
-      <li class="breadcrumb-item active">收益率及贡献</li>
+          <li class="breadcrumb-item"><a href="../index.html">基础指标</a></li>
+      <li class="breadcrumb-item active">收益贡献</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -96,7 +96,7 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>收益率及贡献<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
+<h1>收益贡献<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="decompose.html">收益形态及分解</a><ul>
@@ -105,42 +105,56 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="investment/index.html">投资收益率</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="investment/assetreturn.html">资产收益率</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="investment/assetreturn.html">资产投资收益率</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="investment/assetreturn.html#id2">含义</a></li>
 <li class="toctree-l3"><a class="reference internal" href="investment/assetreturn.html#id3">单期</a></li>
 <li class="toctree-l3"><a class="reference internal" href="investment/assetreturn.html#id4">多期</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="investment/nodereturn.html">分类收益率</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="investment/nodereturn.html">分类投资收益率</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="investment/nodereturn.html#id2">含义</a></li>
 <li class="toctree-l3"><a class="reference internal" href="investment/nodereturn.html#id3">计算</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="investment/portfolioreturn.html">组合投资收益率</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id2">说明</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id3">组合收益计量</a></li>
-<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id4">成本计量</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id5">时间加权成本（多头）</a></li>
-<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id6">资金加权成本（多头）</a></li>
+<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id2">组合总收益</a></li>
+<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id3">组合总成本</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id4">时间加权成本</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id5">单期成本</a></li>
+<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id6">多期成本</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id7">资金加权成本</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id8">简单资金加权</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="investment/portfolioreturn.html#id9">单期成本</a></li>
+<li class="toctree-l6"><a class="reference internal" href="investment/portfolioreturn.html#id10">多期成本</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#dietz">修正 dietz</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="investment/portfolioreturn.html#id11">单期成本</a></li>
+<li class="toctree-l6"><a class="reference internal" href="investment/portfolioreturn.html#id12">多期成本</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id7">常见组合收益率计量</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id8">份额法（非货币类组合）</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id9">单期:</a></li>
-<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id10">多期</a></li>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id13">平均资金占用（保险常用）</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id11">金额法</a><ul>
-<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id12">单期</a></li>
-<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id13">多期</a></li>
+<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id14">常见组合收益率计量</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id15">份额法（非货币类组合）</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id16">单期收益率</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="investment/portfolioreturn.html#id17">前复权收益率</a></li>
+<li class="toctree-l6"><a class="reference internal" href="investment/portfolioreturn.html#id22">后复权收益率</a></li>
 </ul>
 </li>
+<li class="toctree-l5"><a class="reference internal" href="investment/portfolioreturn.html#id28">多期份额法收益率</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id14">货币类、现金类组合</a></li>
-<li class="toctree-l3"><a class="reference internal" href="investment/portfolioreturn.html#id15">金额法与份额法等价推导及误差来源分析</a></li>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id29">金额法</a></li>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id30">货币类、现金类组合</a></li>
+<li class="toctree-l4"><a class="reference internal" href="investment/portfolioreturn.html#id31">金额法与份额法等价推导及误差来源分析</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
