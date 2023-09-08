@@ -48,8 +48,14 @@
 <li class="toctree-l1"><a class="reference internal" href="../introduction.html">概览</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">基础定义</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">日历定义</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">日历含义</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">日历类型</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">日历说明</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">日历类型</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id4">自然日历</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id5">交易日历</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id6">工作日历</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id7">自定义日历</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="market.html">市场定义</a></li>
@@ -95,19 +101,161 @@
   <section id="id1">
 <h1>日历定义<a class="headerlink" href="#id1" title="此标题的永久链接"></a></h1>
 <section id="id2">
-<h2>日历含义<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<h2>日历说明<a class="headerlink" href="#id2" title="此标题的永久链接"></a></h2>
+<p>处理基础数据及计算指标过程中，通常会遇到日历问题，日历的问题可能带来数据和计算上的差异，因此需要事先定义。常用的日历包括自然日历、交易日历、工作日历等。</p>
 </section>
 <section id="id3">
 <h2>日历类型<a class="headerlink" href="#id3" title="此标题的永久链接"></a></h2>
-<p>自然日历
-～～～～～～～～～～～～～～～～～～～～
-365</p>
-<p>交易日历
-～～～～～～～～～～～～～～～～～～～～
-252、250</p>
-<p>工作日历
-～～～～～～～～～～～～～～～～～～～～
-包含有非交易日调整为工作日的部分</p>
+<section id="id4">
+<h3>自然日历<a class="headerlink" href="#id4" title="此标题的永久链接"></a></h3>
+<ul class="simple">
+<li><p>按自然周期固定365</p></li>
+<li><p>按实际天数365或者366</p></li>
+</ul>
+</section>
+<section id="id5">
+<h3>交易日历<a class="headerlink" href="#id5" title="此标题的永久链接"></a></h3>
+<p>交易日历一般指交易市场运行的日历。</p>
+<p>国内通常指的是上交所、深交所、北交所市场运行的日历。</p>
+<ul class="simple">
+<li><p>固定为：252、250、或者其他</p></li>
+<li><p>根据当期交易天数计算；</p></li>
+</ul>
+<p>国际市场因为各地规则不同，因此会有各自的交易日历，除了周末以外，还会有特殊的节假日
+例如：</p>
+<ul class="simple">
+<li><p>纽交所（2022-2023年除周末外节假日）</p></li>
+</ul>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>日期</p></td>
+<td><p>国家及地区</p></td>
+<td><p>证券交易所名称</p></td>
+<td><p>节日</p></td>
+</tr>
+<tr class="row-even"><td><p>2022年1月17日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>马丁路德金纪念日</p></td>
+</tr>
+<tr class="row-odd"><td><p>2022年2月21日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>总统日</p></td>
+</tr>
+<tr class="row-even"><td><p>2022年4月15日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>耶稣受难日</p></td>
+</tr>
+<tr class="row-odd"><td><p>2022年5月30日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>阵亡将士纪念日</p></td>
+</tr>
+<tr class="row-even"><td><p>2022年6月20日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>Juneteenth</p></td>
+</tr>
+<tr class="row-odd"><td><p>2022年7月4日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>独立日</p></td>
+</tr>
+<tr class="row-even"><td><p>2022年9月5日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>劳动节</p></td>
+</tr>
+<tr class="row-odd"><td><p>2022年11月24日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>感恩节</p></td>
+</tr>
+<tr class="row-even"><td><p>2022年11月25日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>感恩节 - 提前于13:00闭市</p></td>
+</tr>
+<tr class="row-odd"><td><p>2022年12月26日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>圣诞节</p></td>
+</tr>
+<tr class="row-even"><td><p>2023年1月2日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>新年</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023年1月16日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>马丁路德金纪念日</p></td>
+</tr>
+<tr class="row-even"><td><p>2023年2月20日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>华盛顿诞辰日</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023年4月7日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>耶稣受难日</p></td>
+</tr>
+<tr class="row-even"><td><p>2023年5月29日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>阵亡将士纪念日</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023年6月19日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>Juneteenth</p></td>
+</tr>
+<tr class="row-even"><td><p>2023年7月3日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>独立日 - 提前于13:00闭市</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023年7月4日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>独立日</p></td>
+</tr>
+<tr class="row-even"><td><p>2023年9月4日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>劳动节</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023年11月23日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>感恩节</p></td>
+</tr>
+<tr class="row-even"><td><p>2023年11月24日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>感恩节 - 提前于13:00闭市</p></td>
+</tr>
+<tr class="row-odd"><td><p>2023年12月25日</p></td>
+<td><p>美国</p></td>
+<td><p>纽约证券交易所</p></td>
+<td><p>圣诞节</p></td>
+</tr>
+</tbody>
+</table>
+<p>数据来源：<a class="reference external" href="https://cn.investing.com/holiday-calendar/">https://cn.investing.com/holiday-calendar/</a></p>
+</section>
+<section id="id6">
+<h3>工作日历<a class="headerlink" href="#id6" title="此标题的永久链接"></a></h3>
+<p>除了交易日自然日以外，还有一种是包含有非交易日调整为工作日的部分，也有称为营业日。
+该情况通常是有一些计息付息会调整至下个工作日，除此外这类日历在指标上用的较少，但是不排除会有特殊业务需要用到此日历。</p>
+</section>
+<section id="id7">
+<h3>自定义日历<a class="headerlink" href="#id7" title="此标题的永久链接"></a></h3>
+<p>除了上述常规的日历外，有些时候需要自定义日历计算，但是原理上与上述类型类似。</p>
+</section>
 </section>
 </section>
 
